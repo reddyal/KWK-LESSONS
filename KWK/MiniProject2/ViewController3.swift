@@ -21,7 +21,7 @@ class ViewController3: UIViewController {
 
     @IBAction func SubmitButtonTapped(_ sender: Any) {
         if let response = textField3.text {
-            if response.lowercased() == "red (taylor's version)" {
+            if response.lowercased() == "red" {
             answerMessage3.text = "great job! you're defintiely a swiftie!"
         }
         else {

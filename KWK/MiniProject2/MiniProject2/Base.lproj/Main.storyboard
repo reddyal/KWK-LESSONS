@@ -31,29 +31,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kod-wv-Kq8">
-                                <rect key="frame" x="146" y="406" width="123" height="30"/>
+                                <rect key="frame" x="27" y="393" width="369" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
                                 <state key="normal" title="SUBMIT ANSWER"/>
                                 <connections>
-                                    <action selector="SubmitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0J-lI-x9m"/>
+                                    <action selector="SubmitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Kn-7G-MLN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESPONSE WILL GO HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwQ-9P-jvc">
-                                <rect key="frame" x="105" y="578" width="205" height="21"/>
+                                <rect key="frame" x="105" y="578" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What was Taylor Swift's first song?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cj-JL-6ZK">
-                                <rect key="frame" x="75" y="165" width="265" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cj-JL-6ZK">
+                                <rect key="frame" x="25" y="48" width="364" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="What was Taylor Swift's first song?">
+                                        <attributes>
+                                            <font key="NSFont" size="34" name="Futura-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElI-LQ-Yrz">
-                                <rect key="frame" x="159" y="290" width="97" height="34"/>
+                                <rect key="frame" x="69" y="290" width="284" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -61,18 +69,22 @@
                                     <action selector="textField2:" destination="ija-hY-ZLN" eventType="editingDidEnd" id="LmN-Td-wPA"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESPONSE WILL GO HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwx-dx-SB4">
+                                <rect key="frame" x="105" y="595" width="205" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.73647505044937134" green="0.87659680843353271" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="tXe-2x-6Vz"/>
                     <connections>
-                        <outlet property="SubmitButton1" destination="Kod-wv-Kq8" id="7OD-ad-zeD"/>
-                        <outlet property="TextField1" destination="hbR-Fs-Phe" id="arG-k7-SGU"/>
-                        <outlet property="answerMessage1" destination="ElI-LQ-Yrz" id="e6B-tD-6Kz"/>
-                        <outlet property="textField1" destination="hbR-Fs-Phe" id="btR-Bw-C1M"/>
-                        <outlet property="triviaQuestion1" destination="4cj-JL-6ZK" id="aio-jQ-UyG"/>
-                        <outlet property="triviaQuestion2" destination="4cj-JL-6ZK" id="Phj-mI-cPJ"/>
+                        <outlet property="answerMessage1" destination="Rwx-dx-SB4" id="aev-ro-RMF"/>
+                        <outlet property="textField1" destination="ElI-LQ-Yrz" id="Bpr-CO-4Cu"/>
+                        <outlet property="triviaQuestion1" destination="4cj-JL-6ZK" id="zdN-3S-c6f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -80,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="253.62318840579712" y="81.696428571428569"/>
         </scene>
-        <!--Second View Controller-->
+        <!--View Controller2-->
         <scene sceneID="qy4-Xc-ob5">
             <objects>
-                <viewController id="4dB-xT-aMf" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController id="4dB-xT-aMf" customClass="ViewController2" customModule="MiniProject2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ReX-3U-luC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +121,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SUBMIT ANSWER"/>
                                 <connections>
-                                    <action selector="SubmitButtonTapped:" destination="4dB-xT-aMf" eventType="touchUpInside" id="s8s-As-0u8"/>
+                                    <action selector="SubmitButtonTapped:" destination="4dB-xT-aMf" eventType="touchUpInside" id="Lgf-j6-kiG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RESPONSE WILL GO HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAv-an-eSb">
@@ -145,21 +157,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="Pvo-ms-Eha"/>
                     <connections>
-                        <outlet property="answerMessage2" destination="cAv-an-eSb" id="AEg-XM-Ehf"/>
-                        <outlet property="answerResponse2" destination="cAv-an-eSb" id="bMz-PC-3eO"/>
-                        <outlet property="answerText2" destination="o54-c7-sQl" id="ZLG-xa-N3p"/>
-                        <outlet property="textField2" destination="o54-c7-sQl" id="1A8-aZ-jac"/>
-                        <outlet property="triviaQuestion2" destination="F1b-1t-3xP" id="CY2-RG-1Cg"/>
+                        <outlet property="answerMessage2" destination="cAv-an-eSb" id="i38-9c-9HI"/>
+                        <outlet property="textField2" destination="o54-c7-sQl" id="whv-XP-yvR"/>
+                        <outlet property="triviaQuestion2" destination="F1b-1t-3xP" id="xri-hK-zI8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o58-Px-JnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="989.85507246376824" y="80.357142857142847"/>
         </scene>
-        <!--Third View Controller-->
+        <!--View Controller3-->
         <scene sceneID="VH4-2X-N49">
             <objects>
-                <viewController id="oOC-9C-POj" customClass="ThirdViewController" sceneMemberID="viewController">
+                <viewController id="oOC-9C-POj" customClass="ViewController3" customModule="MiniProject2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="obU-df-RsA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +185,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LN8-db-9gB">
                                 <rect key="frame" x="146" y="408" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SUMBIT ANSWER"/>
+                                <state key="normal" title="SUBMIT ANSWER"/>
                                 <connections>
                                     <action selector="SubmitButtonTapped:" destination="oOC-9C-POj" eventType="touchUpInside" id="cgs-zO-VYw"/>
                                 </connections>
@@ -217,11 +227,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TJ8-0D-RHM"/>
+        <segue reference="13z-GC-XLE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
